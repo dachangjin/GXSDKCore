@@ -1,0 +1,11 @@
+use_frameworks!
+
+target 'GXSDKCore_Example' do
+  pod 'GXSDKCore', :path => '../'
+
+  target 'GXSDKCore_Tests' do
+    inherit! :search_paths
+
+    pod 'Kiwi'
+  end
+end
