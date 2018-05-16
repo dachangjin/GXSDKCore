@@ -1,0 +1,6 @@
+framework module GXSDKCore {
+  umbrella header "GXSDKCore-umbrella.h"
+
+  export *
+  module * { export * }
+}
