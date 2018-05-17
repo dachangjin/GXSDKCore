@@ -8,7 +8,7 @@
 
 Pod::Spec.new do |s|
 s.name             = 'GXSDKCore'
-s.version          = '0.1.0'
+s.version          = '1.1'
 s.summary          = '管信SDK'
 
 # This description is used to generate tags and improve search results.
@@ -30,15 +30,21 @@ s.source           = { :git => 'https://github.com/dachangjin/GXSDKCore.git', :t
 
 s.ios.deployment_target = '8.0'
 
-s.source_files = 'GXSDKCore/Classes/*.{h,m}'
+#s.source_files = 'GXSDKCore/Classes/*.{h,m}'
 
-s.resource_bundles = {
-'GXSDKCore' => ['GXSDKCore/Assets/*.png']
-}
+#s.resource_bundles = {
+#'GXSDKCore' => ['GXSDKCore/Assets/*.png']
+#}
 
 #  s.public_header_files = 'Pod/Classes/**/*.h'
-#s.frameworks = 'UIKit', 'MapKit','MessageUI','Security','CoreTelephony','AddressBook','AddressBookUI','AudioToolbox','CoreAudio','AVFoundation','SystemConfiguration','CoreGraphics','Foundation'
-#s.libraries  = 'sqlite3.0','stdc++','z.1.2.5','icucore'
-#s.dependency 'AFNetworking', '~> 2.3'
+s.frameworks = 'UIKit', 'MapKit','MessageUI','Security','CoreTelephony','AddressBook','AddressBookUI','AudioToolbox','CoreAudio','AVFoundation','SystemConfiguration','CoreGraphics','Foundation'
+s.libraries  = 'sqlite3.0','stdc++','z.1.2.5','icucore'
+s.dependency 'CocoaAsyncSocket', '~> 7.6.2'
+s.dependency 'FMDB', '~> 2.7.2'
+s.dependency 'Reachability', '~> 3.2'
+s.dependency 'MBProgressHUD', '~> 1.1.0'
+s.dependency 'MJRefresh', '~> 2.4.12'
+s.dependency 'HMSegmentedControl','~> 1.5.1'
+s.vendored_frameworks = 'GXSDKCore/Frameworks/GXSDKCore.framework'
 end
 

@@ -1,6 +1,6 @@
 {
   "name": "GXSDKCore",
-  "version": "0.1.0",
+  "version": "1.0",
   "summary": "管信SDK",
   "description": "TODO: Add long description of the pod here.",
   "homepage": "https://github.com/dachangjin/GXSDKCore",
@@ -13,10 +13,51 @@
   },
   "source": {
     "git": "https://github.com/dachangjin/GXSDKCore.git",
-    "tag": "0.1.0"
+    "tag": "1.0"
   },
   "platforms": {
     "ios": "8.0"
   },
-  "source_files": "GXSDKCore/Classes/*.{h,m}"
+  "frameworks": [
+    "UIKit",
+    "MapKit",
+    "MessageUI",
+    "Security",
+    "CoreTelephony",
+    "AddressBook",
+    "AddressBookUI",
+    "AudioToolbox",
+    "CoreAudio",
+    "AVFoundation",
+    "SystemConfiguration",
+    "CoreGraphics",
+    "Foundation"
+  ],
+  "libraries": [
+    "sqlite3.0",
+    "stdc++",
+    "z.1.2.5",
+    "icucore"
+  ],
+  "dependencies": {
+    "CocoaAsyncSocket": [
+      "~> 7.6.2"
+    ],
+    "FMDB": [
+      "~> 2.7.2"
+    ],
+    "Reachability": [
+      "~> 3.2"
+    ],
+    "MBProgressHUD": [
+      "~> 1.1.0"
+    ],
+    "MJRefresh": [
+      "~> 2.4.12"
+    ],
+    "HMSegmentedControl": [
+      "~> 1.5.1"
+    ]
+  },
+  "vendored_frameworks": "GXSDKCore/Frameworks/GXSDKCore.framework"
 }

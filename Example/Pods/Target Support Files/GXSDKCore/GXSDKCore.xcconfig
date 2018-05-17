@@ -1,6 +1,7 @@
 CONFIGURATION_BUILD_DIR = $PODS_CONFIGURATION_BUILD_DIR/GXSDKCore
 GCC_PREPROCESSOR_DEFINITIONS = $(inherited) COCOAPODS=1
 HEADER_SEARCH_PATHS = "${PODS_ROOT}/Headers/Private" "${PODS_ROOT}/Headers/Public"
+OTHER_LDFLAGS = -l"icucore" -l"sqlite3.0" -l"stdc++" -l"z.1.2.5" -framework "AVFoundation" -framework "AddressBook" -framework "AddressBookUI" -framework "AudioToolbox" -framework "CoreAudio" -framework "CoreGraphics" -framework "CoreTelephony" -framework "Foundation" -framework "MapKit" -framework "MessageUI" -framework "Security" -framework "SystemConfiguration" -framework "UIKit"
 PODS_BUILD_DIR = $BUILD_DIR
 PODS_CONFIGURATION_BUILD_DIR = $PODS_BUILD_DIR/$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)
 PODS_ROOT = ${SRCROOT}
